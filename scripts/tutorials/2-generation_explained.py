@@ -22,7 +22,6 @@ implied. See the License for the specific language governing permissions and lim
 License.
 """
 
-
 import os
 from ext.lab2im import utils
 from SynthSeg.brain_generator import BrainGenerator
@@ -31,17 +30,16 @@ from SynthSeg.brain_generator import BrainGenerator
 n_examples = 5  # number of examples to generate in this script
 result_dir = './outputs_tutorial_2'  # folder where examples will be saved
 
-
 # ---------- Input label maps and associated values ----------
 
 # folder containing label maps to generate images from (note that they must have a ".nii", ".nii.gz" or ".mgz" format)
-path_label_map = '../../data/training_label_maps'
+path_label_map = '../../data_training/nifti'
 
 # Here we specify the structures in the label maps for which we want to generate intensities.
 # This is given as a list of label values, which do not necessarily need to be present in every label map.
 # However, these labels must follow a specific order: first the background, and then all the other labels. Moreover, if
-# 1) the label maps contain some right/left-specific label values, and 2) we activate flipping augmentation (which is
-# true by default), then the rest of the labels must follow a strict order:
+# 1) the label maps contain some right/left-specific label values, and
+# 2) we activate flipping augmentation (which is true by default), then the rest of the labels must follow a strict order:
 # first the non-sided labels (i.e. those which are not right/left specific), then all the left labels, and finally the
 # corresponding right labels (in the same order as the left ones). Please make sure each that each sided label has a
 # right and a left value (this is essential!!!).
@@ -60,8 +58,7 @@ path_label_map = '../../data/training_label_maps'
 #                               53,   # right hippocampus
 #                               57]   # right lesions
 # Note that plenty of structures are not represented here..... but it's just an example ! :)
-generation_labels = '../../data/labels_classes_priors/generation_labels.npy'
-
+generation_labels = '../../data_training/labels/generation_labels.npy'
 
 # We also have to specify the number of non-sided labels in order to differentiate them from the labels with
 # right/left values.
@@ -80,7 +77,6 @@ n_neutral_labels = 18
 # Also, the left and right lesions (labels 25 and 57) are segmented as left and right white matter (labels 2 and 41).
 output_labels = '../../data/labels_classes_priors/synthseg_segmentation_labels.npy'
 
-
 # ---------- Shape and resolution of the outputs ----------
 
 # number of channel to synthesise for multi-modality settings. Set this to 1 (default) in the uni-modality scenario.
@@ -94,7 +90,6 @@ target_res = None
 # The generative model offers the possibility to randomly crop the training examples to a given size.
 # Here we crop them to 160^3, such that the produced images fit on the GPU during training.
 output_shape = 160
-
 
 # ---------- GMM sampling parameters ----------
 
@@ -114,7 +109,6 @@ prior_distributions = 'uniform'
 # associated to the same Gaussian distribution when sampling the GMM.
 generation_classes = '../../data/labels_classes_priors/generation_classes.npy'
 
-
 # ---------- Spatial augmentation ----------
 
 # We now introduce some parameters concerning the spatial deformation. They enable to set the range of the uniform
@@ -130,13 +124,11 @@ translation_bounds = False  # no translation is performed, as this is already mo
 nonlin_std = 4.  # this controls the maximum elastic deformation (higher = more deformation)
 bias_field_std = 0.7  # this controls the maximum bias field corruption (higher = more bias)
 
-
 # ---------- Resolution parameters ----------
 
 # This enables us to randomise the resolution of the produces images.
 # Although being only one parameter, this is crucial !!
 randomise_res = True
-
 
 # ------------------------------------------------------ Generate ------------------------------------------------------
 
@@ -160,7 +152,6 @@ brain_generator = BrainGenerator(labels_dir=path_label_map,
                                  randomise_res=randomise_res)
 
 for n in range(n_examples):
-
     # generate new image and corresponding labels
     im, lab = brain_generator.generate_brain()
 
