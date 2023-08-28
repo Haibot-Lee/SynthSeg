@@ -13,7 +13,7 @@ def print_labels(p):
 
 
 print("generation labels")
-print_labels('../data/labels_classes_priors/generation_labels.npy')
+# print_labels('../data/labels_classes_priors/generation_labels.npy')
 
 # data_path = '../data_training/nifti'
 # all_vals = np.ndarray([]).astype(int)
@@ -122,10 +122,19 @@ self_def_gen_labels = np.array([
 ])
 print(self_def_gen_labels)
 print(self_def_gen_labels.shape)
-np.save('../data_training/labels/generation_labels.npy', self_def_gen_labels)
+# np.save('../data_training/labels/generation_labels.npy', self_def_gen_labels)
 
-# print("output labels")
+print("output labels")
 # print_labels('../data/labels_classes_priors/synthseg_segmentation_labels.npy')
-#
-# print("generation classes")
+
+
+print("generation classes")
 # print_labels('../data/labels_classes_priors/generation_classes.npy')
+
+mapping_df = pd.read_csv('../data_training/labels/labels_table.csv')
+mapping_df.set_index("labels", inplace=True)
+classes_list = [mapping_df.loc[i, "classes"] for i in self_def_gen_labels]
+self_def_gen_classes = np.array(classes_list)
+print(self_def_gen_classes)
+print(self_def_gen_classes.shape)
+np.save('../data_training/labels/generation_classes.npy', self_def_gen_classes)

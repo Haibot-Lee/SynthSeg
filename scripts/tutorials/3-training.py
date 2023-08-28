@@ -26,7 +26,7 @@ from SynthSeg.training import training
 
 
 # path training label maps
-path_training_label_maps = '../../data/training_label_maps'
+path_training_label_maps = '../../data_training/nifti'
 path_model_dir = './outputs_tutorial_3/'
 batchsize = 1
 
@@ -51,9 +51,9 @@ steps_per_epoch = 5000  # number of iteration per epoch
 # these parameters are from the previous tutorial, and thus we do not explain them again here
 
 # generation and segmentation labels
-path_generation_labels = '../../data/labels_classes_priors/generation_labels.npy'
+path_generation_labels = '../../data_training/labels/generation_labels.npy'
 n_neutral_labels = 18
-path_segmentation_labels = '../../data/labels_classes_priors/synthseg_segmentation_labels.npy'
+path_segmentation_labels = '../../data_training/labels/generation_labels.npy'
 
 # shape and resolution of the outputs
 target_res = None
@@ -62,7 +62,7 @@ n_channels = 1
 
 # GMM sampling
 prior_distributions = 'uniform'
-path_generation_classes = '../../data/labels_classes_priors/generation_classes.npy'
+path_generation_classes = '../../data_training/labels/generation_classes.npy'
 
 # spatial deformation parameters
 flipping = True

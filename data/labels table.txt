@@ -8,23 +8,23 @@ as the colour displayed for each structure depends on the used image viewer.
 
 labels    structures
 0         background
-2         left cerebral white matter
-    3         left cerebral cortex
-    4         left lateral ventricle
-    5         left inferior lateral ventricle
-7         left cerebellum white matter
-8         left cerebellum cortex
-10        left thalamus
-11        left caudate
-12        left putamen
-13        left pallidum
-    14        3rd ventricle
-    15        4th ventricle
-16        brain-stem
-17        left hippocampus
-18        left amygdala
-26        left accumbens area
-28        left ventral DC
+2         left cerebral white matter 大脑白质
+    3         left cerebral cortex 大脑皮层 !!
+    4         left lateral ventricle 侧脑室
+    5         left inferior lateral ventricle 下侧脑室
+7         left cerebellum white matter 小脑白质
+8         left cerebellum cortex 小脑皮层
+10        left thalamus 丘脑
+11        left caudate 尾状核
+12        left putamen 豆状核
+13        left pallidum 苍白球
+    14        3rd ventricle 第三脑室
+    15        4th ventricle 第四脑室
+16        brain-stem 脑干
+17        left hippocampus 海马体 !!
+18        left amygdala 杏仁核
+26        left accumbens area 带状核
+28        left ventral DC 腹侧DC
 41        right cerebral white matter
     42        right cerebral cortex
     43        right lateral ventricle
