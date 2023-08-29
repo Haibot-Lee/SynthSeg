@@ -1,93 +1,93 @@
-labels,structs,classes,output
-0,background,0,
-2,left cerebral white matter,2,
-7,left cerebellum white matter,2,
-8,left cerebellum cortex,3,
-10,left thalamus,4,
-11,left caudate,5,
-12,left putamen,6,
-13,left pallidum,7,
-16,brain-stem,1,
-17,left hippocampus,3,
-18,left amygdala,8,
-26,left accumbens area,9,
-28,left ventral DC,10,
-41,right cerebral white matter,11,
-46,right cerebellum white matter,11,
-47,right cerebellum cortex,12,
-49,right thalamus,13,
-50,right caudate,14,
-51,right putamen,15,
-52,right pallidum,16,
-53,right hippocampus,12,
-54,right amygdala,17,
-58,right accumbens area,18,
-60,right ventral DC,19,
-1001,left cerebral cortex,3,
-1002,left cerebral cortex,3,
-1003,left cerebral cortex,3,
-1005,left cerebral cortex,3,
-1006,left cerebral cortex,3,
-1007,left cerebral cortex,3,
-1008,left cerebral cortex,3,
-1009,left cerebral cortex,3,
-1010,left cerebral cortex,3,
-1011,left cerebral cortex,3,
-1012,left cerebral cortex,3,
-1013,left cerebral cortex,3,
-1014,left cerebral cortex,3,
-1015,left cerebral cortex,3,
-1016,left cerebral cortex,3,
-1017,left cerebral cortex,3,
-1018,left cerebral cortex,3,
-1019,left cerebral cortex,3,
-1020,left cerebral cortex,3,
-1021,left cerebral cortex,3,
-1022,left cerebral cortex,3,
-1023,left cerebral cortex,3,
-1024,left cerebral cortex,3,
-1025,left cerebral cortex,3,
-1026,left cerebral cortex,3,
-1027,left cerebral cortex,3,
-1028,left cerebral cortex,3,
-1029,left cerebral cortex,3,
-1030,left cerebral cortex,3,
-1031,left cerebral cortex,3,
-1032,left cerebral cortex,3,
-1033,left cerebral cortex,3,
-1034,left cerebral cortex,3,
-1035,left cerebral cortex,3,
-2001,right cerebral cortex,12,
-2002,right cerebral cortex,12,
-2003,right cerebral cortex,12,
-2005,right cerebral cortex,12,
-2006,right cerebral cortex,12,
-2007,right cerebral cortex,12,
-2008,right cerebral cortex,12,
-2009,right cerebral cortex,12,
-2010,right cerebral cortex,12,
-2011,right cerebral cortex,12,
-2012,right cerebral cortex,12,
-2013,right cerebral cortex,12,
-2014,right cerebral cortex,12,
-2015,right cerebral cortex,12,
-2016,right cerebral cortex,12,
-2017,right cerebral cortex,12,
-2018,right cerebral cortex,12,
-2019,right cerebral cortex,12,
-2020,right cerebral cortex,12,
-2021,right cerebral cortex,12,
-2022,right cerebral cortex,12,
-2023,right cerebral cortex,12,
-2024,right cerebral cortex,12,
-2025,right cerebral cortex,12,
-2026,right cerebral cortex,12,
-2027,right cerebral cortex,12,
-2028,right cerebral cortex,12,
-2029,right cerebral cortex,12,
-2030,right cerebral cortex,12,
-2031,right cerebral cortex,12,
-2032,right cerebral cortex,12,
-2033,right cerebral cortex,12,
-2034,right cerebral cortex,12,
-2035,right cerebral cortex,12,
+labels,structs,output,classes
+0,background,0,0
+2,left cerebral white matter,2,2
+7,left cerebellum white matter,7,2
+8,left cerebellum cortex,8,3
+10,left thalamus,10,4
+11,left caudate,11,5
+12,left putamen,12,6
+13,left pallidum,13,7
+16,brain-stem,16,1
+17,left hippocampus,17,3
+18,left amygdala,18,8
+26,left accumbens area,26,9
+28,left ventral DC,28,10
+41,right cerebral white matter,41,11
+46,right cerebellum white matter,46,11
+47,right cerebellum cortex,47,12
+49,right thalamus,49,13
+50,right caudate,50,14
+51,right putamen,51,15
+52,right pallidum,52,16
+53,right hippocampus,53,12
+54,right amygdala,54,17
+58,right accumbens area,58,18
+60,right ventral DC,60,19
+1001,left cerebral cortex,1001,3
+1002,left cerebral cortex,1002,3
+1003,left cerebral cortex,1003,3
+1005,left cerebral cortex,1005,3
+1006,left cerebral cortex,1006,3
+1007,left cerebral cortex,1007,3
+1008,left cerebral cortex,1008,3
+1009,left cerebral cortex,1009,3
+1010,left cerebral cortex,1010,3
+1011,left cerebral cortex,1011,3
+1012,left cerebral cortex,1012,3
+1013,left cerebral cortex,1013,3
+1014,left cerebral cortex,1014,3
+1015,left cerebral cortex,1015,3
+1016,left cerebral cortex,1016,3
+1017,left cerebral cortex,1017,3
+1018,left cerebral cortex,1018,3
+1019,left cerebral cortex,1019,3
+1020,left cerebral cortex,1020,3
+1021,left cerebral cortex,1021,3
+1022,left cerebral cortex,1022,3
+1023,left cerebral cortex,1023,3
+1024,left cerebral cortex,1024,3
+1025,left cerebral cortex,1025,3
+1026,left cerebral cortex,1026,3
+1027,left cerebral cortex,1027,3
+1028,left cerebral cortex,1028,3
+1029,left cerebral cortex,1029,3
+1030,left cerebral cortex,1030,3
+1031,left cerebral cortex,1031,3
+1032,left cerebral cortex,1032,3
+1033,left cerebral cortex,1033,3
+1034,left cerebral cortex,1034,3
+1035,left cerebral cortex,1035,3
+2001,right cerebral cortex,2001,12
+2002,right cerebral cortex,2002,12
+2003,right cerebral cortex,2003,12
+2005,right cerebral cortex,2005,12
+2006,right cerebral cortex,2006,12
+2007,right cerebral cortex,2007,12
+2008,right cerebral cortex,2008,12
+2009,right cerebral cortex,2009,12
+2010,right cerebral cortex,2010,12
+2011,right cerebral cortex,2011,12
+2012,right cerebral cortex,2012,12
+2013,right cerebral cortex,2013,12
+2014,right cerebral cortex,2014,12
+2015,right cerebral cortex,2015,12
+2016,right cerebral cortex,2016,12
+2017,right cerebral cortex,2017,12
+2018,right cerebral cortex,2018,12
+2019,right cerebral cortex,2019,12
+2020,right cerebral cortex,2020,12
+2021,right cerebral cortex,2021,12
+2022,right cerebral cortex,2022,12
+2023,right cerebral cortex,2023,12
+2024,right cerebral cortex,2024,12
+2025,right cerebral cortex,2025,12
+2026,right cerebral cortex,2026,12
+2027,right cerebral cortex,2027,12
+2028,right cerebral cortex,2028,12
+2029,right cerebral cortex,2029,12
+2030,right cerebral cortex,2030,12
+2031,right cerebral cortex,2031,12
+2032,right cerebral cortex,2032,12
+2033,right cerebral cortex,2033,12
+2034,right cerebral cortex,2034,12
+2035,right cerebral cortex,2035,12
