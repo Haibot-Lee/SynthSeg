@@ -26,8 +26,8 @@ from SynthSeg.training import training
 
 
 # path training label maps
-path_training_label_maps = '../../data_training/nifti'
-path_model_dir = './outputs_tutorial_3/'
+path_training_label_maps = '../../data_training/mask/nifti'
+path_model_dir = 'training-trial1/'
 batchsize = 1
 
 # architecture parameters

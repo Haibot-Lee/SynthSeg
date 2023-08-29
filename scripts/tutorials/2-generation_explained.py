@@ -33,7 +33,7 @@ result_dir = './outputs_tutorial_2'  # folder where examples will be saved
 # ---------- Input label maps and associated values ----------
 
 # folder containing label maps to generate images from (note that they must have a ".nii", ".nii.gz" or ".mgz" format)
-path_label_map = '../../data_training/nifti'
+path_label_map = '../../data_training/mask/nifti'
 
 # Here we specify the structures in the label maps for which we want to generate intensities.
 # This is given as a list of label values, which do not necessarily need to be present in every label map.
