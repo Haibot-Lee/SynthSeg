@@ -2,7 +2,7 @@ import os
 from skimage.io import imread
 import SimpleITK as sitk
 
-base_path = os.path.abspath(r"C:\Users\User\Desktop\workspace\SynthSeg\data_training\tif")
+base_path = "../data_training/tif"
 
 subjects = os.listdir(base_path)
 skip_list = ['CHEN_XUE_LING_3791087',
@@ -37,7 +37,7 @@ for subject in subjects:
     img = imread(os.path.join(base_path, subject))
     if img.shape[0] != 37:
         print(subject, img.shape)
-    nii_file = sitk.GetImageFromArray(img)
+    # nii_file = sitk.GetImageFromArray(img)
 
     # out_f = os.path.join(base_path, "nifti", subject.split(".")[0] + ".nii")
     # if os.path.exists(out_f):
