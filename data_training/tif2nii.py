@@ -2,7 +2,7 @@ import os
 from skimage.io import imread
 import SimpleITK as sitk
 
-base_path = "../data_training/mask/tif"
+base_path = "mask/tif"
 
 subjects = os.listdir(base_path)
 skip_list = ['CHEN_XUE_LING_3791087',

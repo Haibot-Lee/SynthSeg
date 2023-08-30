@@ -3,10 +3,10 @@ import glob
 import shutil
 import dicom2nifti
 
-base_path = os.path.abspath(r"C:\Users\User\Desktop\workspace\SynthSeg\data_training\mask\nifti")
+base_path = os.path.abspath(r"/data_training/mask/nifti")
 find_path = os.path.abspath(r"D:\CTP_mainland")
-tmp_path = os.path.abspath(r"C:\Users\User\Desktop\workspace\SynthSeg\data_training\tmp")
-out_path = os.path.abspath(r"C:\Users\User\Desktop\workspace\SynthSeg\data_training\img")
+tmp_path = os.path.abspath(r"/data_training/tmp")
+out_path = os.path.abspath(r"/data_training/img")
 
 subjects = sorted(os.listdir(base_path))
 
