@@ -22,6 +22,7 @@ License.
 """
 
 # project imports
+import os
 from SynthSeg.predict import predict
 
 # paths to input/output files
@@ -30,7 +31,8 @@ from SynthSeg.predict import predict
 # Input images must have a .nii, .nii.gz, or .mgz extension.
 # Note that path_images can also be the path to an entire folder, in which case all the images within this folder will
 # be segmented. In this case, please provide path_segm (and possibly path_posteriors, and path_resampled) as folder.
-path_images = '/a/path/to/an/image/im.nii.gz'
+path_images = os.path.abspath(
+    r"C:\Users\User\Desktop\workspace\SynthSeg\data_training\CHEN_FANG_LAN_3546970\perfusion-1.nii")
 # path to the output segmentation
 path_segm = './outputs_tutorial_4/predicted_segmentations/im_seg.nii.gz'
 # we can also provide paths for optional files containing the probability map for all predicted labels
@@ -39,11 +41,11 @@ path_posteriors = './outputs_tutorial_4/predicted_information/im_post.nii.gz'
 path_vol = './outputs_tutorial_4/predicted_information/volumes.csv'
 
 # of course we need to provide the path to the trained model (here we use the main synthseg model).
-path_model = '../../models/synthseg_1.0.h5'
+path_model = 'training-trial1/dice_001.h5'
 # but we also need to provide the path to the segmentation labels used during training
-path_segmentation_labels = '../../data/labels_classes_priors/synthseg_segmentation_labels.npy'
+path_segmentation_labels = '../../data_training/labels/generation_labels.npy'
 # optionally we can give a numpy array with the names corresponding to the structures in path_segmentation_labels
-path_segmentation_names = '../../data/labels_classes_priors/synthseg_segmentation_names.npy'
+path_segmentation_names = '../../data_training/labels/segmentation_names.npy'
 
 # We can now provide various parameters to control the preprocessing of the input.
 # First we can play with the size of the input. Remember that the size of input must be divisible by 2**n_levels, so the
@@ -97,7 +99,7 @@ feat_multiplier = 2
 # single image or to a folder). If provided as a folder, ground truths must be sorted in the same order as images in
 # path_images.
 # Just set this to None if you do not want to run evaluation.
-gt_folder = '/the/path/to/the/ground_truth/gt.nii.gz'
+gt_folder = os.path.abspath(r"C:\Users\User\Desktop\workspace\SynthSeg\data_training\nifti\CHEN_FANG_LAN_3546970.nii")
 # Dice scores will be computed and saved as a numpy array in the folder containing the segmentation(s).
 # This numpy array will be organised as follows: rows correspond to structures, and columns to subjects. Importantly,
 # rows are given in a sorted order.
